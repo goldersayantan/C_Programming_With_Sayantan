@@ -1,0 +1,18 @@
+//Average Of Marks Of 5 Subjects... 
+#include<stdio.h>
+int main()    {
+    int m,s,sst,b,e;
+    printf("Enter Bengali Marks:");
+    scanf("%d",&b);
+    printf("Enter English Marks:");
+    scanf("%d",&e);
+    printf("Enter Maths Marks:");
+    scanf("%d",&m);
+    printf("Enter Science Marks:");
+    scanf("%d",&s);
+    printf("Enter Social Studies Marks:");
+    scanf("%d",&sst);
+    float avg=((b+e+m+s+sst)/5.0);
+    printf("Average of all the marks is:%f",avg);
+return 0;
+}
