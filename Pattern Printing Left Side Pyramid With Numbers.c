@@ -1,7 +1,7 @@
 //1
 //12
 //123
-// 1234
+//1234
 //Print This Pattern For N Number Of Lines...
 # include <stdio.h>
 int main()    {
