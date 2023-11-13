@@ -12,6 +12,6 @@ int main()    {
     scanf("%d",&arr[i]);
     product = product*arr[i];
     }
-    printf("The sum of all the numbers in array is: %d",product);
+    printf("The Multiplication of all the numbers in array is: %d",product);
 return 0;
 }
