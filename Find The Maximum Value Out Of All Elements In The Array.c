@@ -4,13 +4,16 @@ int main()    {
     int num;
     printf("Enter the number of numbers in an array: ");
     scanf("%d",&num);
-    int max=-1;
     int arr[num];
-    for(int i=0; i<num; i++)    {
+    int i,max;
+    for( i=0; i<num; i++)    {
     printf("Enter the element number %d :",i+1);
     scanf("%d",&arr[i]);
-    if( arr[i]>max)    {
-    max =arr[i];
+    }
+    for( i=0; i<num; i++)    {
+    max = arr[0];
+    if( max< arr[i])    {
+    max = arr[i];
     }
     }
     printf("The Maximum Number is: %d",max);
