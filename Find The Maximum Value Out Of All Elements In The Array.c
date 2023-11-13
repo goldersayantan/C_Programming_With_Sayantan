@@ -10,8 +10,8 @@ int main()    {
     printf("Enter the element number %d :",i+1);
     scanf("%d",&arr[i]);
     }
-    for( i=0; i<num; i++)    {
     max = arr[0];
+    for( i=0; i<num; i++)    {
     if( max< arr[i])    {
     max = arr[i];
     }
