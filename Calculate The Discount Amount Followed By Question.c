@@ -3,24 +3,30 @@ the discount amount by taking
 the price of the product as a input from the user 
 if the discount is greater than 10% but less than 50%,
 18% GST is to be added to the total bill 
-and if it is more than 50% but less than 100%,2% GST will be applied.
+and if it is more than 50% but less than 100%,36% GST will be applied.
 */
-#include<stdio.h>
+# include <stdio.h>
 int main()    {
-    float amt,dis;
-    printf("Enter amount:");
-    scanf("%f",&amt);
-    printf("Enter discount:");
-    scanf("%f",&dis);
-    if(dis>=10&&dis<=50)    {
-    float bill1=(amt-((amt*dis)/100));
-    float bill2=(bill1+((bill1*18)/100));
-    printf("The final bill is: %f",bill2);
-    }else if(dis>50&&dis<=100)  {
-    float bill3=(amt-((amt*dis)/100));
-    float bill4=(bill3+((bill3*2)/100));
-    printf("The final bill is: %f",bill4);
-    }else
-    printf("ERROR!");
+    int pri, dis;
+    printf("Enter the price of the product: ");
+    scanf("%d",&pri);
+    printf("Enter the discount of the product: ");
+    scanf("%d",&dis);
+    int temp, val;
+    if( dis>=10 && dis<50 )    {
+    temp= (pri-((pri*dis)/100));
+    val=temp+((temp*18)/100);
+    printf("The value is: %d",val);
+    }else if( dis>=50 && dis<100)    {
+    temp= (pri-((pri*dis)/100));
+    val=temp+((temp*36)/100);
+    printf("The value is: %d",val);
+    }else if( dis ==100)    {
+    printf("Don't need to buy");
+    }else    {
+    temp= (pri-((pri*dis)/100));
+    val=temp;
+    printf("The value is: %d",val);
+    }
 return 0;
 }
