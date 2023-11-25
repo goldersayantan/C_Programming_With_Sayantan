@@ -1,0 +1,34 @@
+// Making Of Unlimited Matrices Using 2D Array...
+# include <stdio.h>
+int main()    {
+    int num;
+    printf("Enter the number of matrices you want to make: ");
+    scanf("%d",&num);
+    int i,j,k,l,m;
+    int row, col;
+    for( i=1; i<=num; i++)    {
+    printf("For Matrix Number %d:-",i);
+    printf("\n");
+    printf("Enter the number of rows: ");
+    scanf("%d",&row);
+    printf("Enter the number of columns: ");
+    scanf("%d",&col);
+    int arr[row][col];
+        for( j=0; j<row; j++)    {
+            for( k=0; k<col; k++)    {
+            printf("Enter the element in %d%d index: ",(j+1),(k+1));
+            scanf("%d",&arr[j][k]);
+            }
+            printf("\n");
+        }
+        printf("\n");
+        for( l=0; l<row; l++)    {
+            for( m=0; m<col; m++)    {
+            printf("%d",arr[l][m]);
+            }
+            printf("\n");
+        }
+    printf("\n");
+    }    
+return 0;        
+}
