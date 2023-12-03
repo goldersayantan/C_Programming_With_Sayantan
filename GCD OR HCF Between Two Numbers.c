@@ -20,7 +20,9 @@ int main()    {
         }
     }else  if( num1 == num2 )    {
     result=num1;
-    }
+    }else    {
+    printf("Invalid Numbers");
+}
     printf("The GCD or HCF between %d and %d is: %d",num1, num2, result);
 return 0;
 }
